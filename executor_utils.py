@@ -5,8 +5,8 @@ import os
 import shutil
 
 IMAGE_NAME = 'ztqsteve/coj-executor'
-CURRENT_DIR = os.path.dirname(os.path.realpath(__file__))
-TEMP_BUILD_DIR = '{}/tmp'.format(CURRENT_DIR)
+# CURRENT_DIR = os.path.dirname(os.path.realpath(__file__))
+TEMP_BUILD_DIR = '/tmp'
 SOURCE_FILE_NAMES = {
     'java': 'Example.java',
     'python': 'example.py'
