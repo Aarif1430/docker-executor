@@ -16,6 +16,8 @@ def build_and_run():
     lang = data['lang']
 
     print('API got called with code: {} in {}'.format(code, lang))
+    eu.load_image() # Temporary for testing
+    print('load image function called')
     result = eu.build_and_run(code, lang)
     return jsonify(result)
 

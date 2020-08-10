@@ -27,10 +27,11 @@ EXECUTE_COMMANDS = {
     'python': 'python'
 }
 
-client = docker.from_env()
+# client = docker.from_env() # Original
 
 
 def load_image():
+    client = docker.from_env() # Temporary for testing
     try:
         client.images.get(IMAGE_NAME)
     except ImageNotFound:
