@@ -43,6 +43,7 @@ def load_image():
 
 
 def build_and_run(code, lang):
+    load_image()
     print('Inside executor.utils file')
     print(code)
     print(lang)
