@@ -55,6 +55,7 @@ def build_and_run(code, lang):
 
     with open('{}/{}'.format(source_file_host_dir, SOURCE_FILE_NAMES[lang]), 'w') as source_file:
         source_file.write(code)
+        print("Opened source file successfully")
 
     try:
         client.containers.run(
